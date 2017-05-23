@@ -33,8 +33,7 @@
 
 </head>
 
-<body class="grey-skin intro-page creative-lp">
-<header>        
+<body class="grey-skin intro-page creative-lp">      
         <!--Navbar-->
         <nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar">
            
@@ -92,13 +91,9 @@
             </div>
         </nav>
         <!--/Navbar-->
-</header>
+{% block content %}{% endblock content %}
 
-<main style="min-height: 800px">
-	{% block content %}{% endblock content %}
-</main>
-<footer>
-	
+<footer>	
 </footer>
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
