@@ -1,9 +1,26 @@
 {% extends 'base.html' %}
 
-
 {% block content %}
- 
- <!--Video-->
+<header>
+        <!-- <div class="view intro" id="home">
+            <div class="hm-black-strong-1">
+                <div class="full-bg-img flex-center">
+                    <div class="container">
+                        <div class="row smooth-scroll">
+                            <div class="col-md-12 white-text text-center">
+                                <div class="wow fadeInDown" data-wow-delay="0.2s">
+                                    <h2 class="brand-name font-bold mb-2">Software</h2>
+                                    <hr class="hr-light">
+                                    <h3 class="subtext-header mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur, nihil voluptatem modi nobis veniam.</h3>
+                                </div>
+                                <a href="#demo" data-offset="100" class="btn btn-rounded btn-indigo-2 wow fadeInLeft" data-wow-delay="0.2s">Demo</a>
+                                <a href="#features" data-offset="100" class="btn btn-rounded btn-info wow fadeInRight" data-wow-delay="0.2s">Features</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <div class="intro-video view" id="home">
             <video poster="https://mdbootstrap.com/img/Photos/Horizontal/Things/full%20page/img%20%287%29.jpg" playsinline autoplay muted loop>
                 <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4">
@@ -25,7 +42,49 @@
                 </div>
             </div>
         </div>
-        <!--/Video-->
-    <!--/Navigation & Intro-->
+</header>
+        <div class="container">
+            
+            <!--Section: Features v.1-->
+            <section id="features" class="section feature-box mt-4 mb-4">
+
+                <!--Section heading-->
+                <h1 class="mb-3 font-big font-bold wow fadeIn" data-wow-delay="0.2s">Features</h1>
+               
+                <!--Section description-->
+                <p class="section-description wow fadeIn" data-wow-delay="0.2s">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia.</p>   
+                
+                <!--First row-->
+                <div class="row features">
+
+                    <div class="col-md-4 text-center">
+                        <div class="icon-area">
+                            <div class="circle-icon">
+                                <i class="fa fa-gears"></i>
+                            </div>
+                            <br>
+                            <strong>Customization</strong>
+                            <div class="mt-1">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-md-4 text-center">
+                        <div class="icon-area">
+                            <div class="circle-icon">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <br>
+                            <strong>Easy Tutorials</strong>
+                            <div class="mt-1">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
 {% endblock content %}

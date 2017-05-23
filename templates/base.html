@@ -9,20 +9,20 @@
     <title>Ibro Kola</title>
 
     <!-- Meta OG -->
-    <meta property="og:title" content="Creative Landing Page Template">
-    <meta property="og:description" content="Creativity might come in various forms. With a proper landing page, you can't fail to show it properly.">
+    <meta property="og:title" content="Creative and secure software applications">
+    <meta property="og:description" content="providing up to date content on clean tech developement | fin tech | artificial intelligence | data analytics | machine learning.">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
     <meta property="og:site_name" content="ibrokolawole.com">
     <!-- /Meta OG -->
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="Creativity might come in various forms. With a proper landing page, you can't fail to show it properly." />
-    <meta name="twitter:title" content="Creative Landing Page Template" />
-    <meta name="twitter:site" content="@ibroCEO" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:creator" content="@ibroCEO" />
+    <meta name="twitter:card" content="Creative and secure software applications">
+    <meta name="twitter:description" content="providing up to date content on clean tech developement | fin tech | artificial intelligence | data analytics | machine learning.">
+    <meta name="twitter:title" content="Creative and secure software applications">
+    <meta name="twitter:site" content="@ibroCEO">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:creator" content="@ibroCEO">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -30,7 +30,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
 	<link href="{% static 'css/mdb.css' %}" rel="stylesheet">
-
 </head>
 
 <body class="grey-skin intro-page creative-lp">      
@@ -92,17 +91,23 @@
         </nav>
         <!--/Navbar-->
 {% block content %}{% endblock content %}
-
+<footer class="page-footer center-on-small-only">
+</footer>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="{% static 'js/mdb.min.js' %}"></script>
+	<script src="{% static 'js/mdb1.min.js' %}"></script>
+	<script src="{% static 'js/wow.js' %}"></script>
+	<script src="{% static 'js/forms.js' %}"></script>
+	<script src="{% static 'js/animations.js' %}"></script>
+	
 <script>
 	 //Animation init
         new WOW().init();
         
-        //Modal
+        // Modal
         $('#myModal').on('shown.bs.modal', function () {
           $('#myInput').focus()
         })
