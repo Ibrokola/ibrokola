@@ -98,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Canada/Edmonton'
+TIME_ZONE = 'America/Edmonton'
 
 USE_I18N = True
 
