@@ -1,0 +1,1 @@
+web: gunicorn ibrokola.wsgi --log-file -
