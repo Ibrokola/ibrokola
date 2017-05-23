@@ -14,7 +14,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = ['ibrokola.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com']
 
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'youremail@gmail.com' #my gmail username
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/Edmonton'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
