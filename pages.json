@@ -1,0 +1,24 @@
+[
+{
+    "model": "pages.page",
+    "pk": 1,
+    "fields": {
+        "title": "Hello",
+        "title_description": "Welcome to ibrokolawole",
+        "title_btn": "Join",
+        "title_btn_url": null,
+        "content": "<div class=\"row features\">\r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-gears\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Customization</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                \r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-book\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Easy Tutorials</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-book\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Easy Tutorials</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>"
+    }
+},
+{
+    "model": "pages.page",
+    "pk": 2,
+    "fields": {
+        "title": "Hiii",
+        "title_description": "Welcome again",
+        "title_btn": "Join",
+        "title_btn_url": null,
+        "content": "<div class=\"row features\">\r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-gears\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Creativity</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                \r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-book\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Artificial Intelligence</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-md-4 text-center\">\r\n                        <div class=\"icon-area\">\r\n                            <div class=\"circle-icon\">\r\n                                <i class=\"fa fa-book\"></i>\r\n                            </div>\r\n                            <br>\r\n                            <strong>Business Data Analytics</strong>\r\n                            <div class=\"mt-1\">\r\n                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>"
+    }
+}
+]
