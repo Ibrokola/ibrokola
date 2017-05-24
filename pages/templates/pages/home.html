@@ -58,23 +58,37 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia.</p>   
                 --> 
                 <!--First row-->
+                <div class="row">
+                <div class="col-md-8 offset-md-2">
                 <div class="row features">
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4">
                         <div class="icon-area">
                             <!-- <div class="circle-icon"> -->
                                 <i class="fa fa-book"></i>
                             <!-- </div> -->
+
                             <br>
                             <strong>Join us</strong>
+
+                    </div>
+                    </div>
+                    <div class="col-md-8">
                             <!-- <div class="mt-1"> -->
                                <p>
                                <form method="POST" action=''>{% csrf_token %}
-                               {{ form.as_p }}
-                               <input type="submit" value="Join" class="btn btn-default" />
+                               <!-- {{ form.as_p }} -->
+                               <div class="md-form input-group">
+                                <input type="email"  name="email" class="form-control" placeholder="Your Email">
+                                    <span class="input-group-btn">
+                                        <input type="submit" value="Join" class="btn btn-default" />
+                                    </span>
+                                </div>
                                </form>
                                </p>
                             <!-- </div> -->
-                        </div>
+                    </div>
+                    </div>
+                    </div>
                     </div>
                 </div>
                 <div class="container">
