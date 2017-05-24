@@ -91,13 +91,15 @@
 		        </nav>
 		        <!--/Navbar-->
 			{% if messages %}
-				<div class="alert alert-success">
-					<!-- <div class="container"> -->
-					{% for message in messages %}
-						<strong>{{ message }}</strong><br/>
-					{% endfor %}
-					<!-- </div> -->
-				</div>
+					<div class="alert-success">
+						<div class="container">
+							<!-- <div class="container"> -->
+							{% for message in messages %}
+								<strong>{{ message }}</strong><br/>
+							{% endfor %}
+							<!-- </div> -->
+						</div>
+					</div>
 			{% endif %}
 		{% block content %}
 		{% endblock content %}
