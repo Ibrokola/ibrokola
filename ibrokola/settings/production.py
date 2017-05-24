@@ -16,6 +16,10 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com']
 
+GEO_DEFAULT_IP = '96.52.93.179'
+
+GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
+
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'youremail@gmail.com' #my gmail username
 # EMAIL_HOST_PASSWORD = 'yourpassword' #my gmail password
@@ -38,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'newsletter',
 ]
 
 MIDDLEWARE = [

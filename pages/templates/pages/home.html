@@ -31,11 +31,13 @@
                         <div class="row">
                             <div class="col-md-12 white-text text-center smooth-scroll">
                                 <div class="wow fadeInDown" data-wow-delay="0.2s">
-                                    <h3 class="brand-name font-bold white-text mb-2">Creative Agency</h3>
+                                    <h3 class="brand-name font-bold white-text mb-2">{{ page_obj.title }}</h3>
                                     <hr class="hr-light">
-                                    <h4 class="subtext-header mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur, nihil voluptatem.</h4>
+                                    <h4 class="subtext-header mt-2 mb-2">{{ page_obj.title_description | linebreaks }}</h4>
                                 </div>
-                                <a href="#about" data-offset="90" class="btn btn-rounded btn-light-green-2 wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-home"></i> Visit us</a>
+                                {% if title_btn_url %}
+                                <a href="{{ title_btn_url }}" data-offset="90" class="btn btn-rounded btn-light-green-2 wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-home"></i>{{title_btn}}</a>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -49,40 +51,34 @@
             <section id="features" class="section feature-box mt-4 mb-4">
 
                 <!--Section heading-->
-                <h1 class="mb-3 font-big font-bold wow fadeIn" data-wow-delay="0.2s">Features</h1>
+                <!-- <h1 class="mb-3 font-big font-bold wow fadeIn" data-wow-delay="0.2s">Features</h1> -->
                
                 <!--Section description-->
-                <p class="section-description wow fadeIn" data-wow-delay="0.2s">
+               <!--  <p class="section-description wow fadeIn" data-wow-delay="0.2s">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia.</p>   
-                
+                --> 
                 <!--First row-->
                 <div class="row features">
-
                     <div class="col-md-4 text-center">
                         <div class="icon-area">
-                            <div class="circle-icon">
-                                <i class="fa fa-gears"></i>
-                            </div>
-                            <br>
-                            <strong>Customization</strong>
-                            <div class="mt-1">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4 text-center">
-                        <div class="icon-area">
-                            <div class="circle-icon">
+                            <!-- <div class="circle-icon"> -->
                                 <i class="fa fa-book"></i>
-                            </div>
+                            <!-- </div> -->
                             <br>
-                            <strong>Easy Tutorials</strong>
-                            <div class="mt-1">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
+                            <strong>Join us</strong>
+                            <!-- <div class="mt-1"> -->
+                               <p>
+                               <form method="POST" action=''>{% csrf_token %}
+                               {{ form.as_p }}
+                               <input type="submit" value="Join" class="btn btn-default" />
+                               </form>
+                               </p>
+                            <!-- </div> -->
                         </div>
                     </div>
+                </div>
+                <div class="container">
+                    {{ page_obj.content|safe }}
                 </div>
             </section>
         </div>

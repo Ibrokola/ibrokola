@@ -14,7 +14,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_HOST_USER = 'youremail@gmail.com' #my gmail username
@@ -27,6 +27,10 @@ DEBUG = True
 # ADMINS = [('Justin', EMAIL_HOST_USER)]
 # MANAGERS = ADMINS
 
+GEO_DEFAULT_IP = '96.52.93.179'
+
+GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
+
 
 # Application definition
 
@@ -38,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'newsletter',
 ]
 
 MIDDLEWARE = [
